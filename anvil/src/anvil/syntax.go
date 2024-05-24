@@ -88,25 +88,17 @@ func (e cancelError) Error() string {
 
 func (s chromaHighlighter) Highlight(text string, ctx context.Context) (seq []intvl.Interval, err error) {
 	deadline, deadlineDefined := ctx.Deadline()
-
 	lexer := s.lexer(text)
-
-	if lexer == nil {
-		// Return empty sequence
-		return
-	}
-
+	mylog.CheckNil(lexer)
 	lexer = chroma.Coalesce(lexer)
-
 	iter := mylog.Check2(lexer.Tokenise(nil, text))
-
 	runeIndex := 0
 
 LOOP:
 	for {
 		tok := iter()
-
 		if tok == chroma.EOF {
+			mylog.Check(errors.New(chroma.EOF.String()))
 			break
 		}
 
@@ -166,14 +158,12 @@ LOOP:
 			runeIndex += tokLen
 			continue
 		}
-
 		si := &SyntaxInterval{
 			start: runeIndex,
 			end:   runeIndex + tokLen,
 			color: *color,
 		}
 		seq = append(seq, si)
-
 		runeIndex += tokLen
 	}
 	return
@@ -223,36 +213,25 @@ type synHighlighter struct {
 
 func (s synHighlighter) Highlight(text string, ctx context.Context) (seq []intvl.Interval, err error) {
 	deadline, deadlineDefined := ctx.Deadline()
-
 	started := time.Now()
 	log(LogCatgSyntax, "synHighlighter.Highlight: called\n")
 	lexer := s.lexer(text)
-
-	if lexer == nil {
-		log(LogCatgSyntax, "synHighlighter.Highlight: no lexer found\n")
-		// Return empty sequence
-		return
-	}
-
+	mylog.CheckNil(lexer)
 	runes := []rune(text)
-
 	iter := lexer.Tokenise(runes)
-
 LOOP:
 	for {
 		var tok syn.Token
 		tok = mylog.Check2(iter.Next())
-
 		if tok.Type == syn.EOFType {
+			mylog.Check(errors.New(syn.EOFType.String()))
 			break
 		}
-
 		if deadlineDefined && time.Now().After(deadline) {
 			log(LogCatgSyntax, "synHighlighter.Highlight: exiting due to deadline\n")
 			err = ErrTimeout
 			break LOOP
 		}
-
 		select {
 		case <-ctx.Done():
 			log(LogCatgSyntax, "synHighlighter.Highlight: exiting due to cancellation\n")
@@ -260,11 +239,8 @@ LOOP:
 			break LOOP
 		default:
 		}
-
 		var color *Color
-
 		// log(LogCatgSyntax,"SyntaxHighlighter.Highlight: token category %s, subcat %s, '%s'\n", tok.Type.Category(), tok.Type.SubCategory(), tok)
-
 		switch tok.Type.Category() {
 		case syn.Keyword:
 			color = &s.style.KeywordColor
@@ -309,7 +285,6 @@ LOOP:
 		}
 		seq = append(seq, si)
 	}
-
 	log(LogCatgSyntax, "synHighlighter.Highlight: done (took %s)\n", time.Now().Sub(started))
 	return
 }

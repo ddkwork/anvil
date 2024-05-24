@@ -219,7 +219,6 @@ func (e *editableModel) shiftItemsDueToTextModification(startOfChange, lengthOfC
 
 func (e *editableModel) shiftCursorsDueToTextModification(startOfChange, lengthOfChange int) {
 	for i, ndx := range e.CursorIndices {
-
 		cursor := selection{ndx, ndx}
 		newIndex, _ := computeShiftNeededDueToTextModificationBounds(&cursor, startOfChange, lengthOfChange, changeAtBoundsIsNotWithinSelection)
 		e.CursorIndices[i] = newIndex
