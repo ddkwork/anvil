@@ -2,3 +2,6 @@ log.log
 .idea
 *.exe
 *.apk
+anvil/src/anvil/anvil.panic-gortns
+anvil/src/anvil/anvil.panic-logs
+anvil/src/anvil/anvil.panic
