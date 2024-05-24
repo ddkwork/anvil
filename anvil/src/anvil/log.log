@@ -1,39 +1,222 @@
-[2024-05-24 12:55:48]   Trace ->  --------- title --------- │ ------------------ info ------------------ //runtime.doInit1+0xec C:/Program Files/Go/src/runtime/proc.go:7176
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 96 adapter.go:96:2 	path, _ = mylog.Check3(a.fileFinder.Find(file)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 923 api.go:923:2 	_ = mylog.Check2(rand.Read(buf)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 369 cmds.go:369:2 	realpath, _ := mylog.Check3(finder.Find(path)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 412 cmds.go:412:2 	realpath, _ := mylog.Check3(finder.Find(path)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 1438 cmds.go:1438:3 		path, _, _ := mylog.Check4(win.Tag.Parts()) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48] Warning ->               e.Obj == nil │ "" //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->         The type of '_' is │ int edmodel.go:224:3 		newIndex, _ := computeShiftNeededDueToTextModificationBounds(&cursor, startOfChange, lengthOfChange, changeAtBoundsIsNotWithinSelection) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 592 fs.go:592:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 614 fs.go:614:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 669 fs.go:669:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 682 fs.go:682:3 		file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 700 fs.go:700:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 709 fs.go:709:2 	_ = mylog.Check2(pipe.Write(contents)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 720 fs.go:720:3 		file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 739 fs.go:739:3 		_ = mylog.Check2(pipe.Write(contents)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 751 fs.go:751:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 764 fs.go:764:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 796 fs.go:796:2 	dir, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:48]   Trace ->   mylog.Check hanfled by _ │ 929 fs.go:929:5 	if _ = mylog.Check2(os.Stat(path)); err == nil { //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:49]   Trace ->   mylog.Check hanfled by _ │ 197 internal\typeset\layout.go:197:2 	height, _, _ = mylog.Check4(calculateLineMetricsBasedOn('X', face, fontSize, fixed.I(extraLineGap))) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:49] Warning ->               e.Obj == nil │ "" //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:49]   Trace ->   mylog.Check hanfled by _ │ 32 tag.go:32:2 	parts, _ := mylog.Check3(t.calcParts()) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:49]   Trace ->   mylog.Check hanfled by _ │ 156 tag.go:156:2 	path, _, _ := mylog.Check4(t.Parts()) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
-[2024-05-24 12:55:50]   Error ->                            │ The following states are referred to from rules, but aren't defined: [#pop #pop #pop]
-                                                            │ github.com/jeffwilliams/syn.NewLexerFromXML+0x9b C:/Users/Admin/Desktop/fleet/syn/lexer.go:59
-                                                            │ github.com/jeffwilliams/syn.NewLexerFromXMLFS+0x66 C:/Users/Admin/Desktop/fleet/syn/lexer.go:52
-                                                            │ github.com/jeffwilliams/syn/lexers.init+0xe C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:30
-
-[2024-05-24 12:55:50]   Error ->                            │ The following states are referred to from rules, but aren't defined: [comment]
-                                                            │ github.com/jeffwilliams/syn.NewLexerFromXML+0x9b C:/Users/Admin/Desktop/fleet/syn/lexer.go:59
-                                                            │ github.com/jeffwilliams/syn.NewLexerFromXMLFS+0x66 C:/Users/Admin/Desktop/fleet/syn/lexer.go:52
-                                                            │ github.com/jeffwilliams/syn/lexers.init+0xe C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:30
-
-[2024-05-24 12:55:50] Success ->                 config dir │ C:/Users/Admin/.anvil //main.init.0+0xba C:/Users/Admin/Desktop/fleet/anvil/anvil/src/anvil/config.go:29
-[2024-05-24 12:55:50]   Error ->                            │ detected nil pointer
+[2024-05-24 13:10:12]   Trace ->  --------- title --------- │ ------------------ info ------------------ //runtime.doInit1+0xec C:/Program Files/Go/src/runtime/proc.go:7176
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 96 adapter.go:96:2 	path, _ = mylog.Check3(a.fileFinder.Find(file)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 369 cmds.go:369:2 	realpath, _ := mylog.Check3(finder.Find(path)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 412 cmds.go:412:2 	realpath, _ := mylog.Check3(finder.Find(path)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 1438 cmds.go:1438:3 		path, _, _ := mylog.Check4(win.Tag.Parts()) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12] Warning ->               e.Obj == nil │ "" //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->         The type of '_' is │ int edmodel.go:224:3 		newIndex, _ := computeShiftNeededDueToTextModificationBounds(&cursor, startOfChange, lengthOfChange, changeAtBoundsIsNotWithinSelection) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 592 fs.go:592:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 614 fs.go:614:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 669 fs.go:669:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 682 fs.go:682:3 		file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 700 fs.go:700:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 709 fs.go:709:2 	_ = mylog.Check2(pipe.Write(contents)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 720 fs.go:720:3 		file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 739 fs.go:739:3 		_ = mylog.Check2(pipe.Write(contents)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 751 fs.go:751:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 764 fs.go:764:2 	file, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, kill)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 796 fs.go:796:2 	dir, session, _ := mylog.Check4(f.splitFilenameAndMakeSession(path, nil)) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:12]   Trace ->   mylog.Check hanfled by _ │ 929 fs.go:929:5 	if _ = mylog.Check2(os.Stat(path)); err == nil { //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:13]   Trace ->   mylog.Check hanfled by _ │ 197 internal\typeset\layout.go:197:2 	height, _, _ = mylog.Check4(calculateLineMetricsBasedOn('X', face, fontSize, fixed.I(extraLineGap))) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:13] Warning ->               e.Obj == nil │ "" //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:13]   Trace ->   mylog.Check hanfled by _ │ 32 tag.go:32:2 	parts, _ := mylog.Check3(t.calcParts()) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:13]   Trace ->   mylog.Check hanfled by _ │ 155 tag.go:155:2 	path, _, _ := mylog.Check4(t.Parts()) //golang.org/x/tools/go/ast/astutil.(*application).apply+0x18c C:/Users/Admin/go/pkg/mod/golang.org/x/tools@v0.21.0/go/ast/astutil/rewrite.go:197
+[2024-05-24 13:10:14]   Trace ->          embedded/abap.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/abnf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->  embedded/actionscript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace -> embedded/actionscript_3.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/ada.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->            embedded/al.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/angular2.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/antlr.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/apacheconf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/apl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/applescript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/arduino.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/armasm.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/awk.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/ballerina.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/bash.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/batchfile.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/bibtex.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/bicep.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/blitzbasic.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/bnf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/bqn.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/brainfuck.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/c++.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->             embedded/c.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/cap_n_proto.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/ceylon.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/cfengine3.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/cfstatement.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/chaiscript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/clojure.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/cmake.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/cobol.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->  embedded/coffeescript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/common_lisp.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/coq.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/crystal.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/csharp.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/css.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/cython.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->             embedded/d.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/dart.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/diff.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->  embedded/django_jinja.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/dns.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/dtd.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/dylan.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/ebnf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/elixir.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/elm.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/emacslisp.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/erlang.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/factor.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/fennel.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/fish.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/forth.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/fortran.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/fsharp.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/gas.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/gdscript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/gherkin.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/glsl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/gnuplot.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->            embedded/go.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/go_template.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/graphql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/groff.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/groovy.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/handlebars.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/haskell.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/hcl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/hexdump.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/hlb.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/hlsl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->            embedded/hy.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/idris.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/igor.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/ini.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->            embedded/io.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->             embedded/j.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/java.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/javascript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/json.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/julia.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/jungle.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/kotlin.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/lighttpd.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/llvm.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/lua.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/markdown.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/mathematica.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/matlab.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/mcfunction.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/meson.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/metal.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/minizinc.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/mlir.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/modula-2.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/monkeyc.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace -> embedded/morrowindscript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/mysql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/nasm.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/newspeak.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/nginx.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/nim.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/nix.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/objective-c.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/ocaml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/octave.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace -> embedded/onesenterprise.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/openscad.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/pacmanconf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/perl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/php.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/pig.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/pkgconfig.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/pl_pgsql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/plutus_core.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/pony.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/postscript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/povray.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/powerquery.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/powershell.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/prolog.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/promql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/properties.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/protobuf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/psl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/puppet.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/python.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/python_2.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/qbasic.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/qml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->             embedded/r.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/racket.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/ragel.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/react.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/reasonml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/reg.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/rexx.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/ruby.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/rust.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/sas.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/sass.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/scala.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/scheme.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/scilab.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/scss.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/sed.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/sieve.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/smalltalk.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/snobol.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/solidity.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/sparql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/sql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/squidconf.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/standard_ml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/stas.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/stylus.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->         embedded/swift.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/systemd.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace -> embedded/systemverilog.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/tablegen.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/tasm.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/tcl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/tcsh.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/termcap.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->      embedded/terminfo.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->     embedded/terraform.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/tex.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/thrift.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/toml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->   embedded/tradingview.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->  embedded/transact-sql.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/turing.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/turtle.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/twig.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->    embedded/typescript.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace -> embedded/typoscriptcssdata.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace -> embedded/typoscripthtmldata.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/vala.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/vb_net.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->       embedded/verilog.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/vhdl.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/vhs.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/vue.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/wdte.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->        embedded/whiley.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/xml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/xorg.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/yaml.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->          embedded/yang.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/zed.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14]   Trace ->           embedded/zig.xml │ "" //github.com/jeffwilliams/syn/lexers.init.func1+0xf0 C:/Users/Admin/Desktop/fleet/syn/lexers/lexers.go:23
+[2024-05-24 13:10:14] Success ->                 config dir │ C:/Users/Admin/.anvil //main.init.0+0xba C:/Users/Admin/Desktop/fleet/anvil/anvil/src/anvil/config.go:29
+[2024-05-24 13:10:15]   Error ->                            │ detected nil pointer
                                                             │ github.com/ddkwork/golibrary/mylog.Check+0x404 C:/Users/Admin/go/pkg/mod/github.com/ddkwork/golibrary@v0.0.32/mylog/check.go:170
                                                             │ main.loop.func1.1+0x37 C:/Users/Admin/Desktop/fleet/anvil/anvil/src/anvil/main.go:291
                                                             │ github.com/ddkwork/golibrary/mylog.CheckNil+0x86 C:/Users/Admin/go/pkg/mod/github.com/ddkwork/golibrary@v0.0.32/mylog/check.go:207
