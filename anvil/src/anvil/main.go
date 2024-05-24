@@ -288,7 +288,9 @@ func loop(w *app.Window, parms *uiLoopInitParams) error {
 			dumpLogs()
 			dumpGoroutines()
 			//			panic(r)
-			mylog.Check(r)
+			mylog.Call(func() {
+				mylog.Check(r)
+			})
 		}
 	}()
 

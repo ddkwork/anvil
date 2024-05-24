@@ -2263,11 +2263,7 @@ func (e *editable) SetFocus(gtx layout.Context) {
 }
 
 func (e *editable) schedule(id string, d time.Duration, f func()) {
-	if e.Scheduler == nil {
-		log(LogCatgEd, "editable: can't schedule %s: scheduler is nil\n", id)
-		return
-	}
-
+	mylog.CheckNil(e.Scheduler)
 	e.Scheduler.AfterFunc(id, d, f)
 }
 
