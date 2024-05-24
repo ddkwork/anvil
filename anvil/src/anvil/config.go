@@ -25,6 +25,9 @@ func init() {
 	} else {
 		ConfDir = fmt.Sprintf("%s/.anvil", os.Getenv("HOME"))
 	}
+	ConfDir = stream.FixUncPath(ConfDir)
+	mylog.Success("config dir", ConfDir)
+	stream.CreatDirectory(ConfDir)
 }
 
 func SshKeyDir() string {
@@ -43,7 +46,12 @@ func LoadSshKeys() {
 }
 
 func StyleConfigFile() string {
-	return fmt.Sprintf("%s/%s", ConfDir, "style.js")
+	f := fmt.Sprintf("%s/%s", ConfDir, "style.js")
+	if !stream.FileExists(f) {
+		mylog.Check(WriteStyle(f, WindowStyle))
+		// stream.WriteTruncate(f, "")
+	}
+	return f
 }
 
 func loadFontFromFile(filename string) (f text.FontFace, err error) {
@@ -130,7 +138,12 @@ func LoadPlumbingRulesFromFile(path string) (rules []PlumbingRule) {
 }
 
 func SettingsConfigFile() string {
-	return fmt.Sprintf("%s/%s", ConfDir, "settings.toml")
+	f := fmt.Sprintf("%s/%s", ConfDir, "settings.toml")
+	if !stream.FileExists(f) {
+		buf := mylog.Check2(toml.Marshal(settings))
+		stream.WriteTruncate(f, buf)
+	}
+	return f
 }
 
 type Settings struct {
@@ -151,11 +164,8 @@ type TypesettingSettings struct {
 }
 
 func LoadSettingsFromConfigFile(settings *Settings) (err error) {
-	var f *os.File
-	f = mylog.Check2(os.Open(SettingsConfigFile()))
-
+	f := mylog.Check2(os.Open(SettingsConfigFile()))
 	defer func() { mylog.Check(f.Close()) }()
-
 	dec := toml.NewDecoder(f)
 	mylog.Check(dec.Decode(settings))
 	return

@@ -198,12 +198,7 @@ func ReadStyle(path string, defaults *Style) (s Style, err error) {
 	if defaults != nil {
 		s = *defaults
 	}
-
-	file, e := os.Open(path)
-	if e != nil {
-		err = e
-		return
-	}
+	file := mylog.Check2(os.Open(path))
 	defer file.Close()
 
 	enc := json.NewDecoder(file)

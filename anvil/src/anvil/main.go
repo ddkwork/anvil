@@ -52,12 +52,12 @@ func run() {
 	}
 	LoadSettings()
 	LoadStyle()
-	// HirePlumber()//todo
+	// HirePlumber() // todo
 	ansi.InitColors(WindowStyle.Ansi.AsColors())
 	editor = NewEditor(WindowStyle)
 	application = NewApplication()
 
-	LoadSshKeys()
+	//	LoadSshKeys()
 	initDebugging()
 
 	go ServeLocalAPI()
@@ -287,7 +287,8 @@ func loop(w *app.Window, parms *uiLoopInitParams) error {
 			dumpPanic(r)
 			dumpLogs()
 			dumpGoroutines()
-			panic(r)
+			//			panic(r)
+			mylog.Check(r)
 		}
 	}()
 
