@@ -215,7 +215,10 @@ func (s synHighlighter) Highlight(text string, ctx context.Context) (seq []intvl
 	deadline, deadlineDefined := ctx.Deadline()
 	started := time.Now()
 	log(LogCatgSyntax, "synHighlighter.Highlight: called\n")
-	lexer := s.lexer(text)
+	lexer := s.lexer(text) // todo match err and language not set
+	if lexer == nil {
+		lexer = synlexers.Get("go")
+	}
 	mylog.CheckNil(lexer)
 	runes := []rune(text)
 	iter := lexer.Tokenise(runes)
