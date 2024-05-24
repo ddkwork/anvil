@@ -98,7 +98,7 @@ LOOP:
 	for {
 		tok := iter()
 		if tok == chroma.EOF {
-			mylog.Check(errors.New(chroma.EOF.String()))
+			err = errors.New(chroma.EOF.String())
 			break
 		}
 
@@ -227,7 +227,7 @@ LOOP:
 		var tok syn.Token
 		tok = mylog.Check2(iter.Next())
 		if tok.Type == syn.EOFType {
-			mylog.Check(errors.New(syn.EOFType.String()))
+			err = errors.New(syn.EOFType.String())
 			break
 		}
 		if deadlineDefined && time.Now().After(deadline) {
