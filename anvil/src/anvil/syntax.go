@@ -2,12 +2,14 @@ package main
 
 import (
 	"context"
+	"errors"
 	"time"
 	"unicode/utf8"
 
 	"github.com/alecthomas/chroma"
 	"github.com/alecthomas/chroma/lexers"
 	"github.com/ddkwork/golibrary/mylog"
+
 	"github.com/jeffwilliams/anvil/internal/intvl"
 	"github.com/jeffwilliams/syn"
 	synlexers "github.com/jeffwilliams/syn/lexers"
@@ -369,7 +371,7 @@ func (ah *AsyncHighlighter) Highlight(text string) (seq []intvl.Interval, err er
 	ctx, _ = context.WithDeadline(ctx, time.Now().Add(ah.timeout))
 
 	seq = mylog.Check2(ah.h.Highlight(text, ctx))
-	if err != nil && err == ErrTimeout {
+	if err != nil && errors.Is(err, ErrTimeout) {
 		log(LogCatgSyntax, "AsyncHighlighter.Highlight: starting background highlighter\n")
 		// if too long, send to background goroutine
 		ctx := context.Background()

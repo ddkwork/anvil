@@ -85,7 +85,7 @@ func calculateTagParts(tag string) (inBytes tagParts, inRunes tagParts, err erro
 	if tag == "" {
 		return
 	}
-	return //todo need fix this bug
+	return // todo need fix this bug
 	i := strings.IndexRune(tag, '|')
 	if i < 0 {
 		mylog.Check(fmt.Errorf("tag does not contain |"))
