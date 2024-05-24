@@ -92,13 +92,8 @@ func (a editableAdapter) dir() string {
 }
 
 func (a editableAdapter) findFile(file string) (path *GlobalPath, err error) {
-	_, err2 := a.fileFinder.WindowDir()
-	if err2 != nil {
-		_ = ""
-	}
-
+	mylog.Check2(a.fileFinder.WindowDir())
 	path, _ = mylog.Check3(a.fileFinder.Find(file))
-
 	return
 }
 
