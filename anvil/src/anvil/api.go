@@ -919,16 +919,12 @@ type ApiSession struct {
 
 func createApiSession(cmd string) (sess *ApiSession, err error) {
 	buf := make([]byte, 200)
-
-	_ = mylog.Check2(rand.Read(buf))
-
+	mylog.Check2(rand.Read(buf))
 	sess = &ApiSession{
 		id:  ApiSessionId(base64.StdEncoding.EncodeToString(buf)),
 		cmd: cmd,
 	}
-
 	apiSessions.Add(sess)
-
 	return
 }
 
