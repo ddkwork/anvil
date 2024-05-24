@@ -20,6 +20,7 @@ import (
 	"gioui.org/text"
 
 	"github.com/ddkwork/golibrary/mylog"
+
 	"github.com/jeffwilliams/anvil/internal/slice"
 	"github.com/jeffwilliams/anvil/internal/typeset"
 	"github.com/jeffwilliams/anvil/internal/words"
@@ -224,10 +225,7 @@ func (e *Editor) LoadFileOpts(path string, opts LoadFileOpts) *Window {
 	}
 
 	w = editor.NewWindow(opts.InCol)
-	if w == nil {
-		log(LogCatgEditor, "Editor.LoadFile: failed to create window\n")
-		return nil
-	}
+	mylog.CheckNil(w)
 
 	w.LoadFileAndGoto(path, opts.GoTo, opts.SelectBehaviour, opts.GrowBodyBehaviour)
 	//if err != nil {
