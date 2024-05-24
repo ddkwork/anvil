@@ -34,7 +34,6 @@ func (t Tag) Parts() (path, editorArea, userArea string, err error) {
 	path = s[parts.path[0]:parts.path[1]]
 	editorArea = s[parts.editorArea[0]:parts.editorArea[1]]
 	userArea = s[parts.userArea[0]:parts.userArea[1]]
-
 	return
 }
 
@@ -154,6 +153,5 @@ func (t *Tag) highlightBasename(path string) {
 func (t *Tag) highlightBasenameOnTextChange(ch *TextChange) {
 	t.ClearManualHighlights()
 	path, _, _ := mylog.Check4(t.Parts())
-
 	t.highlightBasename(path)
 }
