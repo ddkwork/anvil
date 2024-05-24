@@ -806,7 +806,7 @@ func (e *editable) unwrappedLineCount(gtx layout.Context) int {
 
 func (e *editable) wrappedLineCount(gtx layout.Context) int {
 	windowHeightInLines := 0
-	ltext, er := (e.getOrBuildLayedoutText(gtx, e.visibleText(gtx)))
+	ltext, er := e.getOrBuildLayedoutText(gtx, e.visibleText(gtx))
 	if er == nil {
 		windowHeightInLines = ltext.LineCount()
 	} else {
@@ -2263,6 +2263,9 @@ func (e *editable) SetFocus(gtx layout.Context) {
 }
 
 func (e *editable) schedule(id string, d time.Duration, f func()) {
+	if e.Scheduler == nil {
+		e.Scheduler = NewScheduler(nil) // todo bug
+	}
 	mylog.CheckNil(e.Scheduler)
 	e.Scheduler.AfterFunc(id, d, f)
 }

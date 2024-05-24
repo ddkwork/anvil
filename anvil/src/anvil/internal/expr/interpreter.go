@@ -795,7 +795,7 @@ func (s commandStage) buildSubstReplacementFromSubmatches(data []byte, rangeData
 				continue
 			}
 
-			numVal, e := (strconv.Atoi(num.String()))
+			numVal, e := strconv.Atoi(num.String())
 			if e == nil {
 				addSubmatchToReplacement(numVal)
 			} else {
@@ -812,7 +812,7 @@ func (s commandStage) buildSubstReplacementFromSubmatches(data []byte, rangeData
 	}
 
 	if mode == modeEscape {
-		numVal, e := (strconv.Atoi(num.String()))
+		numVal, e := strconv.Atoi(num.String())
 		if e == nil {
 			addSubmatchToReplacement(numVal)
 		} else {

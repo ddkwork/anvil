@@ -88,7 +88,7 @@ func calculateTagParts(tag string) (inBytes tagParts, inRunes tagParts, err erro
 
 	i := strings.IndexRune(tag, '|')
 	if i < 0 {
-		mylog.Check(fmt.Errorf("Tag does not contain |"))
+		mylog.Check(fmt.Errorf("tag does not contain |"))
 		return
 	}
 	inBytes.userArea[0] = i + 1
@@ -96,7 +96,7 @@ func calculateTagParts(tag string) (inBytes tagParts, inRunes tagParts, err erro
 
 	j := strings.LastIndex(tag[:i], " Del")
 	if j < 0 {
-		mylog.Check(fmt.Errorf("Tag does not contain ' Del'"))
+		mylog.Check(fmt.Errorf("tag does not contain ' Del'"))
 		return
 	}
 

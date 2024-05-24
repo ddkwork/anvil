@@ -417,11 +417,11 @@ func Exit(code int) {
 
 func init() {
 	// editor.LoadFile("C:\\Users\\Admin\\Downloads\\anvil-src-v0.1\\anvil\\src\\anvil\\main.go")
-	os.Args = []string{
-		"",
-		"D:\\workspace\\workspace\\app\\widget\\chapar\\ui\\widgets\\cmd\\xxx.js",
-		//"C:\\Users\\Admin\\Downloads\\anvil-src-v0.1\\anvil\\src\\anvil\\main.go",
-	}
+	//os.Args = []string{
+	//"",
+	//"D:\\workspace\\workspace\\app\\widget\\chapar\\ui\\widgets\\cmd\\xxx.js",
+	//"C:\\Users\\Admin\\Downloads\\anvil-src-v0.1\\anvil\\src\\anvil\\main.go",
+	//	}
 	pflag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage: %s [options] [file]\n", os.Args[0])
 		fmt.Printf("Launch the Anvil text editor. If [file] is given, that file is opened.\n\n")

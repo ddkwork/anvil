@@ -633,7 +633,7 @@ func (a ApiHandler) putWindowTag(winId int, rsp http.ResponseWriter, req *http.R
 		file := ""
 		edArea := ""
 		s := string(data)
-		parts, _, e := (calculateTagParts(s))
+		parts, _, e := calculateTagParts(s)
 		if e == nil {
 			file = s[parts.path[0]:parts.path[1]]
 			edArea = s[parts.editorArea[0]:parts.editorArea[1]]

@@ -326,7 +326,7 @@ func (c CommandExecutor) CmdNew(ctx *CmdContext) {
 	}
 
 	if strings.TrimSpace(path) != "" {
-		gpath, e := (NewGlobalPath(path, GlobalPathIsFile))
+		gpath, e := NewGlobalPath(path, GlobalPathIsFile)
 		d, err2 := NewGlobalPath(ctx.Dir, GlobalPathIsDir)
 		if e == nil && err2 == nil {
 			gpath = gpath.MakeAbsoluteRelativeTo(d)
@@ -962,7 +962,7 @@ func (f *EditableModify) pump(c chan Work) {
 	contentsClosed := false
 	errsClosed := false
 	workIsDone := func() bool {
-		return (contentsClosed && errsClosed)
+		return contentsClosed && errsClosed
 	}
 
 	firstAppend := true

@@ -124,7 +124,6 @@ func (f FileFinder) winFile() (path *GlobalPath, err error) {
 
 func (f FileFinder) winFileNoCheck() (path *GlobalPath, err error) {
 	state := GlobalPathUnknown
-
 	p := "."
 	if f.win != nil {
 		p = f.win.file
@@ -145,7 +144,6 @@ func (f FileFinder) winFileNoCheck() (path *GlobalPath, err error) {
 
 func (f FileFinder) WindowDir() (path string, err error) {
 	winpath := mylog.Check2(f.winFileNoCheck())
-
 	path = winpath.Dir().String()
 	return
 }
