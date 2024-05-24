@@ -224,8 +224,7 @@ func (s synHighlighter) Highlight(text string, ctx context.Context) (seq []intvl
 	iter := lexer.Tokenise(runes)
 LOOP:
 	for {
-		var tok syn.Token
-		tok = mylog.Check2(iter.Next())
+		tok := mylog.Check2(iter.Next())
 		if tok.Type == syn.EOFType {
 			err = errors.New(syn.EOFType.String())
 			break
