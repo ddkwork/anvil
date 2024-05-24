@@ -362,7 +362,7 @@ func NewAsyncHighlighter(h Highlighter, timeout time.Duration, done func(seq []i
 // it Highlight returns with the error ErrTimeout and continues in the background. If
 // it is continued in the background, and when it's finished the function `done` is called
 // with the result. Done is called from a separate goroutine
-func (ah *AsyncHighlighter) Highlight(text string) (seq []intvl.Interval, err error) {
+func (ah *AsyncHighlighter) Highlight(text string) (seq []intvl.Interval, e error) {
 	// stop any background job by closing c
 	ah.Cancel()
 
@@ -370,8 +370,8 @@ func (ah *AsyncHighlighter) Highlight(text string) (seq []intvl.Interval, err er
 	ctx := context.Background()
 	ctx, _ = context.WithDeadline(ctx, time.Now().Add(ah.timeout))
 
-	seq = mylog.Check2(ah.h.Highlight(text, ctx))
-	if err != nil && errors.Is(err, ErrTimeout) {
+	seq, e = ah.h.Highlight(text, ctx)
+	if e != nil && errors.Is(e, ErrTimeout) {
 		log(LogCatgSyntax, "AsyncHighlighter.Highlight: starting background highlighter\n")
 		// if too long, send to background goroutine
 		ctx := context.Background()

@@ -1819,8 +1819,11 @@ func (e *editable) addStyleChangesDueToAnsiColorEscapeSequences(gtx layout.Conte
 		return NewSyntaxInterval(start, end, Color(color))
 	}
 
-	seqs := mylog.Check2(ansi.HighlightColorEscapeSequences(txt, e.TopLeftIndex, newIntvl))
-
+	seqs, er := ansi.HighlightColorEscapeSequences(txt, e.TopLeftIndex, newIntvl)
+	mylog.CheckIgnore(er)
+	if er != nil {
+		return
+	}
 	for _, s := range seqs {
 		e.styleSeq.AddWithoutSort(s)
 	}
@@ -1847,14 +1850,14 @@ func (e *editable) HighlightSyntax() {
 	// does run.
 
 	if e.syntaxHighlighter != nil && e.text.Len() < e.syntaxMaxDocSize {
-
-		toks := mylog.Check2(e.asyncHighlighter.Highlight(string(e.Bytes())))
-		e.syntaxHighlightDelay = 1 * time.Millisecond
-
-		// Keep existing tokens if it is a timeout, since we will get the tokens eventually.
-
-		// log(LogCatgEd,"setting syntax tokens to %p after highlighting\n", toks)
-		e.syntaxTokens = toks
+		tokens, er := e.asyncHighlighter.Highlight(string(e.Bytes()))
+		mylog.CheckIgnore(er)
+		if er == nil {
+			e.syntaxHighlightDelay = 1 * time.Millisecond
+			// Keep existing tokens if it is a timeout, since we will get the tokens eventually.
+			// log(LogCatgEd,"setting syntax tokens to %p after highlighting\n", tokens)
+			e.syntaxTokens = tokens
+		}
 	} else {
 		// log(LogCatgSyntax,"%s: setting syntax tokens to nil\n", e.label)
 		e.syntaxTokens = nil
