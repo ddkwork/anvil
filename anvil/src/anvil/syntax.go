@@ -98,7 +98,6 @@ LOOP:
 	for {
 		tok := iter()
 		if tok == chroma.EOF {
-			err = errors.New(chroma.EOF.String())
 			break
 		}
 
@@ -226,7 +225,6 @@ LOOP:
 	for {
 		tok := mylog.Check2(iter.Next())
 		if tok.Type == syn.EOFType {
-			err = errors.New(syn.EOFType.String())
 			break
 		}
 		if deadlineDefined && time.Now().After(deadline) {

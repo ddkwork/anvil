@@ -150,7 +150,6 @@ func (f FileFinder) WindowDir() (path string, err error) {
 
 func (f FileFinder) WindowFile() (path string, err error) {
 	winpath := mylog.Check2(f.winFileNoCheck())
-
 	path = winpath.Path()
 	return
 }
