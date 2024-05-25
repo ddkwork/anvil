@@ -327,9 +327,9 @@ func TestParseRegex(t *testing.T) {
 
 			var p parser
 			tree := mylog.Check2(p.Parse(toks))
-			if err != nil && !tc.ok {
-				t.Fatalf("Parse returned an error: %v", err)
-			}
+			//if err != nil && !tc.ok {
+			//	t.Fatalf("Parse returned an error: %v", err)
+			//}
 
 			if ok {
 				b := assert.Equal(t, tc.expected, tree)

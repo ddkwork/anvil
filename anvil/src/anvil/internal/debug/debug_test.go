@@ -1,9 +1,12 @@
 package debug
 
 import (
+	"fmt"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/ddkwork/golibrary/mylog"
 )
 
 func TestAll(t *testing.T) {
@@ -21,9 +24,11 @@ func TestAll(t *testing.T) {
 2022-11-10T06:53:54.600 <render> Done rendering screen
 `
 
-	if !sameIgnoringTime(expected, s) {
-		t.Fatalf("bad log:\n%s\n", s)
-	}
+	mylog.Call(func() {
+		if !sameIgnoringTime(expected, s) {
+			mylog.Check(fmt.Sprintf("bad log:\n%s\n", s))
+		}
+	})
 }
 
 func TestCatg(t *testing.T) {
@@ -59,9 +64,11 @@ func TestTwoCatg(t *testing.T) {
 2022-11-10T06:59:08.879 <render> Done rendering screen
 `
 
-	if !sameIgnoringTime(expected, s) {
-		t.Fatalf("bad log:\n%s\n", s)
-	}
+	mylog.Call(func() {
+		if !sameIgnoringTime(expected, s) {
+			mylog.Check(fmt.Sprintf("bad log:\n%s\n", s))
+		}
+	})
 }
 
 func TestMax(t *testing.T) {

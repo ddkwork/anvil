@@ -4,8 +4,9 @@ import (
 	"testing"
 
 	"github.com/ddkwork/golibrary/mylog"
-	"github.com/jeffwilliams/anvil/internal/runes"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/jeffwilliams/anvil/internal/runes"
 )
 
 func TestInvertRanges(t *testing.T) {
@@ -291,13 +292,13 @@ func TestOperation(t *testing.T) {
 			oper := expr.terms[0].(operation)
 
 			stage := mylog.Check2(newOperationStage(oper))
-			assert.NoError(t, err)
+			// assert.NoError(t, err)
 
 			dataCopy := make([]byte, len(tc.inputData))
 			copy(dataCopy, []byte(tc.inputData))
 			actual, _ := stage.Execute(&dataCopy, []Range{tc.inputRange})
 
-			msgAndArgs := []interface{}{}
+			var msgAndArgs []interface{}
 			if len(actual) > 0 {
 				msgAndArgs = append(msgAndArgs, "actual data in first range:", applyRangeToString(tc.inputData, actual[0]))
 			}
@@ -386,33 +387,35 @@ func TestCommand(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			// Parse address
-			var s Scanner
-			toks, ok := s.Scan(tc.inputExpr)
-			if !ok {
-				t.Fatalf("Scan failed")
-			}
+			mylog.Call(func() {
+				// Parse address
+				var s Scanner
+				toks, ok := s.Scan(tc.inputExpr)
+				if !ok {
+					t.Fatalf("Scan failed")
+				}
 
-			var p Parser
-			p.matchLimit = 100
-			tree := mylog.Check2(p.Parse(toks))
+				var p Parser
+				p.matchLimit = 100
+				tree := mylog.Check2(p.Parse(toks))
 
-			var handler testHandler
+				var handler testHandler
 
-			// Get the tree part (we have expr->terms->addr)
-			dataCopy := make([]byte, len(tc.inputData))
-			copy(dataCopy, []byte(tc.inputData))
+				// Get the tree part (we have expr->terms->addr)
+				dataCopy := make([]byte, len(tc.inputData))
+				copy(dataCopy, []byte(tc.inputData))
 
-			vm := mylog.Check2(NewInterpreter(dataCopy, tree, &handler, 0))
+				vm := mylog.Check2(NewInterpreter(dataCopy, tree, &handler, 0))
 
-			vm.Execute([]Range{&irange{0, len(tc.inputData)}})
+				mylog.Check(vm.Execute([]Range{&irange{0, len(tc.inputData)}}))
 
-			/*msgAndArgs := []interface{}{}
-			if len(actual) > 0 {
-				msgAndArgs = append(msgAndArgs, "actual data in first range:", applyRangeToString(tc.inputData, actual[0]))
-			}*/
+				/*msgAndArgs := []interface{}{}
+				if len(actual) > 0 {
+					msgAndArgs = append(msgAndArgs, "actual data in first range:", applyRangeToString(tc.inputData, actual[0]))
+				}*/
 
-			assert.Equal(t, tc.expected, handler.calls)
+				assert.Equal(t, tc.expected, handler.calls)
+			})
 		})
 	}
 }
@@ -578,7 +581,7 @@ func TestGroups(t *testing.T) {
 			oper := expr.terms[0].(group)
 
 			stage := mylog.Check2(newGroupStage(oper, 0))
-			assert.NoError(t, err)
+			// assert.NoError(t, err)
 
 			dataCopy := make([]byte, len(tc.inputData))
 			copy(dataCopy, []byte(tc.inputData))
