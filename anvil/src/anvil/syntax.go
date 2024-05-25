@@ -354,7 +354,6 @@ func (ah *AsyncHighlighter) Highlight(text string) (seq []intvl.Interval, e erro
 		go ah.highlightInBackground(text, ctx)
 		return
 	}
-
 	return
 }
 
@@ -368,7 +367,6 @@ func (ah *AsyncHighlighter) Cancel() {
 
 func (ah AsyncHighlighter) highlightInBackground(text string, ctx context.Context) (seq []intvl.Interval, err error) {
 	seq = mylog.Check2(ah.h.Highlight(text, ctx))
-
 	ah.done(seq, err)
 	return
 }

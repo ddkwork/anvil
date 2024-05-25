@@ -5,6 +5,7 @@ import (
 
 	"gioui.org/io/event"
 	"gioui.org/layout"
+
 	"github.com/jeffwilliams/anvil/internal/words"
 )
 
@@ -28,7 +29,7 @@ func (b *Body) Init(style blockStyle, editableStyle editableStyle, syntaxStyle S
 
 func (b *Body) EnableSyntax(filename string) {
 	b.syntaxHighlighter = NewSyntaxHighlighter(b.syntaxStyle)
-	b.asyncHighlighter = NewAsyncHighlighter(b.syntaxHighlighter, 100*time.Millisecond, b.asyncSyntaxHighlightingDone)
+	b.asyncHighlighter = NewAsyncHighlighter(b.syntaxHighlighter, 10000*time.Millisecond, b.asyncSyntaxHighlightingDone)
 	b.syntaxHighlighter.SetFilename(filename)
 }
 
