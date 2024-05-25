@@ -163,7 +163,7 @@ func TestParser(t *testing.T) {
 
 				var p Parser
 				p.matchLimit = 100
-				tree := mylog.Check2(p.Parse(toks)) //todo detected nil pointer
+				tree := mylog.Check2(p.Parse(toks)) // todo detected nil pointer
 				// Uncomment below to print the parse tree
 				/*
 					fmt.Printf("test '%s': Parse tree returned:\n", tc.name)

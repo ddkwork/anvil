@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"regexp"
 	"testing"
 
@@ -207,15 +208,17 @@ func TestSeekParse(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			actualSeeklessName, seek := mylog.Check3(parseSeekFromFilename(tc.input))
+			mylog.Call(func() {
+				actualSeeklessName, seek := mylog.Check3(parseSeekFromFilename(tc.input))
 
-			if actualSeeklessName != tc.expectedSeeklessName {
-				t.Fatalf("expected seekless name to be %s but it is %s", tc.expectedSeeklessName, actualSeeklessName)
-			}
-			// if seek != tc.expectedSeek {
-			if !seeksEqual(seek, tc.expectedSeek) {
-				t.Fatalf("expected seek be %#v but it is %#v", tc.expectedSeek, seek)
-			}
+				if actualSeeklessName != tc.expectedSeeklessName {
+					t.Fatalf("expected seekless name to be %s but it is %s", tc.expectedSeeklessName, actualSeeklessName)
+				}
+				// if seek != tc.expectedSeek {
+				if !seeksEqual(seek, tc.expectedSeek) {
+					mylog.Check(fmt.Sprintf("expected seek be %#v but it is %#v", tc.expectedSeek, seek))
+				}
+			})
 		})
 	}
 }
