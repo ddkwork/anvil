@@ -2,7 +2,6 @@ package expr
 
 import (
 	"bytes"
-	"errors"
 	"fmt"
 	"io"
 	"unicode"
@@ -68,8 +67,8 @@ func (s *Scanner) Scan(expr string) (tokens []token, ok bool) {
 	s.errs = make([]error, 0, 10)
 
 	for {
-		t, e := (s.next())
-		if errors.Is(e, io.EOF) {
+		t, e := s.next()
+		if mylog.Check(e) {
 			break
 		}
 		s.addToken(t)
