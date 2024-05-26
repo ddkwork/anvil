@@ -155,19 +155,16 @@ func (b scrollbar) buttonPositions(gtx layout.Context) (top, bottom int) {
 	bdy := b.windowBody
 	textLen := len(bdy.Bytes())
 	r := bdy.TopLeftIndex
-
-	// lh := int(b.lineHeight)//todo test
-
+	lh := b.lineHeight
 	top = lerp(r, textLen, gtx.Constraints.Max.Y)
-
-	disp := mylog.Check2(b.lenOfDisplayedBodyTextInBytes(gtx))
-
+	disp,err := b.lenOfDisplayedBodyTextInBytes(gtx))
+	if err != nil {
+		disp = lh
+	}
 	bottom = lerp(r+disp, textLen, gtx.Constraints.Max.Y)
-
 	if bottom-top < 2 {
 		bottom = top + 2
 	}
-
 	return
 }
 
