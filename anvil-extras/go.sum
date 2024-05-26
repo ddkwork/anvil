@@ -24,6 +24,8 @@ github.com/ddkwork/golibrary v0.0.42 h1:37/QVbltF57CUuBthZXmKTfccbt51pBLlB4kXfdP
 github.com/ddkwork/golibrary v0.0.42/go.mod h1:ZX3tnJ9D5eWJAZYONxEic/fIrISMyIiuOKiT8NidzTM=
 github.com/ddkwork/golibrary v0.0.43 h1:90jcs/39Vemhfi0VfF6T7MXt5RFQkX7VT9cQy5fu5FQ=
 github.com/ddkwork/golibrary v0.0.43/go.mod h1:ZX3tnJ9D5eWJAZYONxEic/fIrISMyIiuOKiT8NidzTM=
+github.com/ddkwork/golibrary v0.0.45 h1:fn/fOFbTtAD2brOobJlohDO6nxPWkwNUTO+cZhgu+nI=
+github.com/ddkwork/golibrary v0.0.45/go.mod h1:ZX3tnJ9D5eWJAZYONxEic/fIrISMyIiuOKiT8NidzTM=
 github.com/ogier/pflag v0.0.1 h1:RW6JSWSu/RkSatfcLtogGfFgpim5p7ARQ10ECk5O750=
 github.com/ogier/pflag v0.0.1/go.mod h1:zkFki7tvTa0tafRvTBIZTvzYyAu6kQhPZFnshFFPE+g=
 github.com/speedata/hyphenation v1.0.2 h1:2rDCtAqNfbf+E56SsqbmNApsVx9CH+4fwIh1RZuu3B8=
