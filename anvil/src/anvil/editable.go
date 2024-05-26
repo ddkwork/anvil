@@ -1853,7 +1853,7 @@ func (e *editable) HighlightSyntax() {
 		tokens, er := e.asyncHighlighter.Highlight(string(e.Bytes()))
 		mylog.CheckIgnore(er)
 		if er == nil {
-			e.syntaxHighlightDelay = 1 * time.Millisecond
+			// e.syntaxHighlightDelay = 1 * time.Millisecond
 			// Keep existing tokens if it is a timeout, since we will get the tokens eventually.
 			// log(LogCatgEd,"setting syntax tokens to %p after highlighting\n", tokens)
 			e.syntaxTokens = tokens

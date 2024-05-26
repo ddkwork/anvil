@@ -283,12 +283,14 @@ type uiLoopInitParams struct {
 
 func loop(w *app.Window, parms *uiLoopInitParams) error {
 	defer func() {
-		if r := recover(); r != nil {
-			dumpPanic(r)
-			dumpLogs()
-			dumpGoroutines()
-			mylog.Call(func() { mylog.Check(r) })
-		}
+		mylog.Call(func() {
+			if r := recover(); r != nil {
+				dumpPanic(r)
+				dumpLogs()
+				dumpGoroutines()
+				mylog.Check(r)
+			}
+		})
 	}()
 
 	if parms.dumpfileToLoad != "" {
