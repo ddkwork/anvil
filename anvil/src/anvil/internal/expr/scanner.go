@@ -96,13 +96,10 @@ func (s *Scanner) next() (tok token, err error) {
 
 func (s *Scanner) nextInStateNormal() (tok token, err error) {
 	r := s.nextNonSpaceRune()
-
 	if s.atEnd() {
 		return nilToken, io.EOF
 	}
-
 	tok.pos = s.pos
-
 	switch r {
 	case '#':
 		s.pos++
@@ -164,9 +161,7 @@ func (s *Scanner) nextInStateNormal() (tok token, err error) {
 
 		tok.pos = p
 	}
-
 	s.prevRune = r
-
 	return tok, nil
 }
 
