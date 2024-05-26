@@ -177,7 +177,8 @@ func (b scrollbar) lenOfDisplayedBodyTextInBytes(gtx layout.Context) (int, error
 	// left after rendering the scrollbar. Thus we must set gtx temporarily to the correct width
 	gtx.Constraints.Max.X -= b.style.GutterWidth
 	bdy := b.windowBody
-	disp := mylog.Check2(bdy.LenOfDisplayedTextInBytes(gtx))
+	disp, e := bdy.LenOfDisplayedTextInBytes(gtx)
+	mylog.Check(e)
 	gtx.Constraints.Max.X += b.style.GutterWidth
 	return disp, nil
 }
