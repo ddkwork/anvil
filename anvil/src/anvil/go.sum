@@ -44,6 +44,8 @@ github.com/ddkwork/golibrary v0.0.38 h1:+JUyFyH52J1FsaX9oiHiI2NQP84A8+MKAGpTrYst
 github.com/ddkwork/golibrary v0.0.38/go.mod h1:ZX3tnJ9D5eWJAZYONxEic/fIrISMyIiuOKiT8NidzTM=
 github.com/ddkwork/golibrary v0.0.39 h1:ZGOF3XtZA7bUzt8Dov02jnKZgipkG/Qe6sGoCpNDRVo=
 github.com/ddkwork/golibrary v0.0.39/go.mod h1:ZX3tnJ9D5eWJAZYONxEic/fIrISMyIiuOKiT8NidzTM=
+github.com/ddkwork/golibrary v0.0.40 h1:2vjs3JOP3dDeTlD6aSx0gdgI2Bi0mB9uOa9LkGz/7Pw=
+github.com/ddkwork/golibrary v0.0.40/go.mod h1:ZX3tnJ9D5eWJAZYONxEic/fIrISMyIiuOKiT8NidzTM=
 github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
 github.com/dlclark/regexp2 v1.4.1-0.20201116162257-a2a8dda75c91/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
 github.com/dlclark/regexp2 v1.7.0/go.mod h1:DHkYz0B9wPfa6wondMfaivmHpzrQ3v9q8cnmRbL6yW8=
