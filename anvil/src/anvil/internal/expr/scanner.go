@@ -68,7 +68,7 @@ func (s *Scanner) Scan(expr string) (tokens []token, ok bool) {
 
 	for {
 		t, e := s.next()
-		if mylog.Check(e) {
+		if mylog.CheckEof(e) {
 			break
 		}
 		s.addToken(t)

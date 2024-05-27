@@ -348,7 +348,7 @@ func copyBlocks(source io.Reader, dest chan []byte, blocksize int, errs chan err
 		}
 
 		n, e := source.Read(block)
-		if mylog.Check(e) {
+		if mylog.CheckEof(e) {
 			break
 		}
 		// errs might already be closed, hence we send in a select statement
