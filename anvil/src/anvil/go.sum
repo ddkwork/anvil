@@ -60,6 +60,8 @@ github.com/ddkwork/golibrary v0.0.49 h1:vWx/XGFlqj3Pgnz/DLdEMAJO1smlew5UsNR5nMkH
 github.com/ddkwork/golibrary v0.0.49/go.mod h1:f5jZd249HgqcWzNOpDSY9DguI1bdwSJjuX7k9pLTf8E=
 github.com/ddkwork/golibrary v0.0.53 h1:44fy3bLH2Tm9g62mDM4MMcj4ve3d6UjBxY6dEnL3qDo=
 github.com/ddkwork/golibrary v0.0.53/go.mod h1:f5jZd249HgqcWzNOpDSY9DguI1bdwSJjuX7k9pLTf8E=
+github.com/ddkwork/golibrary v0.0.58 h1:v8bXgseiE69BU8ljCvxBE6SGHaBExIih1PYPucmBMUY=
+github.com/ddkwork/golibrary v0.0.58/go.mod h1:wnz6yMtdcIDWr30n2pVWgbZip5KU3O1DI0WgcQpfFg4=
 github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
 github.com/dlclark/regexp2 v1.4.1-0.20201116162257-a2a8dda75c91/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
 github.com/dlclark/regexp2 v1.7.0/go.mod h1:DHkYz0B9wPfa6wondMfaivmHpzrQ3v9q8cnmRbL6yW8=
@@ -90,6 +92,7 @@ github.com/google/pprof v0.0.0-20240430035430-e4905b036c4e h1:RsXNnXE59RTt8o3DcA
 github.com/google/pprof v0.0.0-20240430035430-e4905b036c4e/go.mod h1:kf6iHlnVGwgKolg33glAes7Yg/8iWP8ukqeldJSO7jw=
 github.com/google/pprof v0.0.0-20240521024322-9665fa269a30/go.mod h1:kf6iHlnVGwgKolg33glAes7Yg/8iWP8ukqeldJSO7jw=
 github.com/google/pprof v0.0.0-20240525223248-4bfdf5a9a2af/go.mod h1:K1liHPHnj73Fdn/EKuT8nrFqBihUSKXoLYU0BuatOYo=
+github.com/google/pprof v0.0.0-20240528025155-186aa0362fba/go.mod h1:K1liHPHnj73Fdn/EKuT8nrFqBihUSKXoLYU0BuatOYo=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
 github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/gorilla/websocket v1.5.1 h1:gmztn0JnHVt9JZquRuzLw3g4wouNVzKL15iLr/zn/QY=
@@ -151,6 +154,7 @@ golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f h1:99ci1mjWVBWwJiEKYY6jWa4d2
 golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f/go.mod h1:/lliqkxwWAhPjf5oSOIJup2XcqJaw8RGS6k3TGEc7GI=
 golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842/go.mod h1:XtvwrStGgqGPLc4cjQfWqZHG1YFdYs6swckp8vpsjnc=
 golang.org/x/exp v0.0.0-20240525044651-4c93da0ed11d/go.mod h1:XtvwrStGgqGPLc4cjQfWqZHG1YFdYs6swckp8vpsjnc=
+golang.org/x/exp v0.0.0-20240529005216-23cca8864a10/go.mod h1:XtvwrStGgqGPLc4cjQfWqZHG1YFdYs6swckp8vpsjnc=
 golang.org/x/exp/shiny v0.0.0-20220827204233-334a2380cb91 h1:ryT6Nf0R83ZgD8WnFFdfI8wCeyqgdXWN4+CkFVNPAT0=
 golang.org/x/exp/shiny v0.0.0-20220827204233-334a2380cb91/go.mod h1:VjAR7z0ngyATZTELrBSkxOOHhhlnVUxDye4mcjx5h/8=
 golang.org/x/image v0.15.0 h1:kOELfmgrmJlw4Cdb7g/QGuB3CvDrXbqEIww/pNtNBm8=

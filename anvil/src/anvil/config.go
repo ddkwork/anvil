@@ -25,7 +25,7 @@ func init() {
 	} else {
 		ConfDir = fmt.Sprintf("%s/.anvil", os.Getenv("HOME"))
 	}
-	ConfDir = stream.FixUncPath(ConfDir)
+	ConfDir = stream.FixFilePath(ConfDir)
 	mylog.Success("config dir", ConfDir)
 	stream.CreatDirectory(ConfDir)
 }
@@ -47,7 +47,7 @@ func LoadSshKeys() {
 
 func StyleConfigFile() string {
 	f := fmt.Sprintf("%s/%s", ConfDir, "style.js")
-	if !stream.FileExists(f) {
+	if !stream.IsFilePath(f) {
 		mylog.Check(WriteStyle(f, WindowStyle))
 		// stream.WriteTruncate(f, "")
 	}
@@ -139,7 +139,7 @@ func LoadPlumbingRulesFromFile(path string) (rules []PlumbingRule) {
 
 func SettingsConfigFile() string {
 	f := fmt.Sprintf("%s/%s", ConfDir, "settings.toml")
-	if !stream.FileExists(f) {
+	if !stream.IsFilePath(f) {
 		buf := mylog.Check2(toml.Marshal(settings))
 		stream.WriteTruncate(f, buf)
 	}
