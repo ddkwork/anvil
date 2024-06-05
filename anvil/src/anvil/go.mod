@@ -14,7 +14,7 @@ require (
 	github.com/alecthomas/chroma v0.10.0
 	github.com/alecthomas/chroma/v2 v2.14.0
 	github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310
-	github.com/ddkwork/golibrary v0.0.61
+	github.com/ddkwork/golibrary v0.0.62
 	github.com/flopp/go-findfont v0.1.0
 	github.com/go-text/typesetting v0.0.0-20230413204129-b4f0492bf7ae
 	github.com/jeffwilliams/syn v0.1.6
@@ -49,7 +49,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
-	golang.org/x/exp v0.0.0-20240529005216-23cca8864a10 // indirect
+	golang.org/x/exp v0.0.0-20240531132922-fd00a4e0eefc // indirect
 	golang.org/x/exp/shiny v0.0.0-20220827204233-334a2380cb91 // indirect
 	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/net v0.25.0 // indirect
