@@ -42,6 +42,8 @@ github.com/ddkwork/golibrary v0.0.61 h1:Es77O5/vrMO6MnFPqLDucdWfexXhT8mgBzeBIY+t
 github.com/ddkwork/golibrary v0.0.61/go.mod h1:bMFBej7hF+v0iRPFfJIAJ+QvFjD9OzW5F0LO14SwSgM=
 github.com/ddkwork/golibrary v0.0.62 h1:1FykFpwByIEtR6l7tm7sa2MmZDjuoMEcZwY3tB1JADw=
 github.com/ddkwork/golibrary v0.0.62/go.mod h1:aLG0o5decT3ocB5SWY94n55ynRpVcL8OInSo2p0o5UA=
+github.com/ddkwork/golibrary v0.0.65 h1:/WyTQzoVywAlCbNQgVhnoPXQ91NS6KclXvUBLc1ZDlQ=
+github.com/ddkwork/golibrary v0.0.65/go.mod h1:/55gYXaVeq2QkSTCaBk3sL0yzbg+DDPr9u3AvyFJblU=
 github.com/ogier/pflag v0.0.1 h1:RW6JSWSu/RkSatfcLtogGfFgpim5p7ARQ10ECk5O750=
 github.com/ogier/pflag v0.0.1/go.mod h1:zkFki7tvTa0tafRvTBIZTvzYyAu6kQhPZFnshFFPE+g=
 github.com/speedata/hyphenation v1.0.2 h1:2rDCtAqNfbf+E56SsqbmNApsVx9CH+4fwIh1RZuu3B8=
@@ -50,3 +52,4 @@ golang.org/x/sys v0.8.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.18.0 h1:DBdB3niSjOA/O0blCZBqDefyWNYveAYMNF1Wum0DYQ4=
 golang.org/x/sys v0.18.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/sys v0.20.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
+golang.org/x/sys v0.21.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
