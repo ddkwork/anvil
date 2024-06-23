@@ -7,7 +7,7 @@ require (
 	github.com/UserExistsError/conpty v0.1.2 // indirect
 	github.com/acarl005/stripansi v0.0.0-20180116102854-5a71ef0e047d // indirect
 	github.com/creack/pty v1.1.21 // indirect
-	github.com/ddkwork/golibrary v0.0.69 // indirect
+	github.com/ddkwork/golibrary v0.0.71 // indirect
 	github.com/ogier/pflag v0.0.1 // indirect
 	github.com/speedata/hyphenation v1.0.2 // indirect
 	golang.org/x/sys v0.21.0 // indirect

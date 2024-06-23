@@ -2,4 +2,4 @@ module anvil-go-api
 
 go 1.22.4
 
-require github.com/ddkwork/golibrary v0.0.69 // indirect
+require github.com/ddkwork/golibrary v0.0.71 // indirect
