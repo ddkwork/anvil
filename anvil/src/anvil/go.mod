@@ -14,7 +14,7 @@ require (
 	github.com/alecthomas/chroma v0.10.0
 	github.com/alecthomas/chroma/v2 v2.14.0
 	github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310
-	github.com/ddkwork/golibrary v0.0.71
+	github.com/ddkwork/golibrary v0.0.83
 	github.com/flopp/go-findfont v0.1.0
 	github.com/go-text/typesetting v0.0.0-20230413204129-b4f0492bf7ae
 	github.com/jeffwilliams/syn v0.1.6
